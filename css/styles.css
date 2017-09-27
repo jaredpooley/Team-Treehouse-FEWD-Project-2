@@ -68,13 +68,14 @@ li.linav {
   margin-top: 12px;
   margin-bottom: 12px;
   background: #fff;
-  padding: 15px 0;
   font-size: 1em;
   font-weight: bold;
 }
 
 a.nav {
   color: #000;
+  display: block;
+  padding: 15px 0;
 }
 
 a.footer-nav {
@@ -246,6 +247,9 @@ ul.footer-nav {
   li.linav {
     display: inline-block;
     margin: .2em .5em;
+  }
+
+  a.nav {
     padding: .8em 1em;
   }
 
