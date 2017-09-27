@@ -100,6 +100,7 @@ div.intro p {
 img.profile-image {
   width: 75%;
   margin-bottom: 1em;
+  border-radius: 2px;
 }
 
 /*main*/
@@ -109,7 +110,7 @@ div.col {
 }
 
 div.portfolio {
-  margin-bottom: .4em;
+  margin-bottom: 1em;
   padding-bottom: .1em;
   background-color: #fbffe2; /*NOTE - Exceeds Expectations Met - Design & Layout - Backgound Color changed!*/
   border-radius: 8px;
@@ -169,7 +170,7 @@ div.base-wrap {
 div.contact {
   margin-bottom: 1.4em;
   padding-bottom: .1em;
-  width: 95%
+  width: 100%
   margin: auto;
 }
 
@@ -186,7 +187,7 @@ span.contact-method {
 footer.main-footer {
   border-top: grey solid 1.5px;
   padding-top: .4em;
-  width: 95%;
+  width: 100%;
   margin: auto;
 }
 
@@ -225,8 +226,153 @@ ul.footer-nav {
 }
 
 
-/*Layout CSS*/
-
-
-
 /*Media Querys*/
+
+@media (min-width: 768px) {   /*-------Media Query for screens larger than 768px*/
+
+  body {
+    font-size: 16px;
+  }
+
+  div.container {
+    width: 90%;
+    margin: auto;
+  }
+
+  ul.main-nav {
+    display: inline-block;
+    margin-top: 0;
+  }
+
+  a.nav {
+    display: inline-block;
+  }
+
+  li.linav {
+    margin: .2em .5em;
+    padding: .8em 1em;
+  }
+
+
+  div.intro {
+    padding-left: 1em;
+    padding-bottom: 1em;
+  }
+
+  img.profile-image {
+    float: right;
+    width: 40%;
+    margin: 0 2.5%;
+  }
+
+  div.intro-text {
+    float: left;
+    width: 55%;
+  }
+
+  div.portfolio {
+    padding-left: 4%;
+  }
+
+  div.col {
+    float: left;
+    width: 47%;
+    min-height: 345px;
+    margin-right: 2%;
+  }
+
+  div.html {
+    width: 45%;
+    margin: auto;
+    margin: .6em auto;
+  }
+
+  div.css {
+    width: 45%;
+    margin: .6em auto;
+  }
+
+  div.javascript {
+    width: 45%;
+    margin: auto;
+    margin: .6em auto;
+  }
+
+  div.contact {
+    width: 85%;
+    margin: auto;
+  }
+
+  a.back-to-top {
+    display: none;
+  }
+
+  ul.footer-nav {
+    display: inline-block;
+    float: right;
+  }
+
+  li.lifooter {
+    display: inline-block;
+    margin-right: 1em;
+  }
+
+}
+
+@media (min-width: 1024px) {   /*-------Media Query for screens larger than 1024px*/
+
+  header.main-header {
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-bottom: 0;
+  }
+
+  h1 {
+    float: left;
+    width: auto;
+  }
+
+  nav.main-navigation {
+    float: right;
+    width: auto;
+  }
+
+  ul.main-nav {
+    width: auto;
+  }
+
+  div.container {
+    width: 85%;
+  }
+
+  div.col {
+    width: 30%;
+    margin-right: 3%;
+  }
+
+  div.html {
+    width: 30%;
+  }
+
+  div.css {
+    width: 30%;
+  }
+
+  div.javascript {
+    width: 30%;
+  }
+
+  div.contact {
+    width: 80%;
+  }
+
+}
+
+
+
+/*Clearfix*/
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
