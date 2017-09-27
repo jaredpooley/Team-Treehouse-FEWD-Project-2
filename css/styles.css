@@ -5,6 +5,7 @@
 /*Fonts*/
 
 @import url('https://fonts.googleapis.com/css?family=Droid+Sans');
+@import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah');
 
 /*Base CSS*/
 
@@ -19,8 +20,8 @@ header.main-header {
   width: 100%;
   background-color: #fafafa;
   padding-top: .1em;
-  padding-bottom: .2em;
-  margin-bottom: 1.8em;
+  padding-bottom: 1em;
+  margin-bottom: 1.2em;
 }
 
 nav.main-navigation {
@@ -58,6 +59,7 @@ footer.main-footer {
 h2.section-title {
   margin-bottom: 1.5em;
   margin-top: 0;
+  font-family: 'Gloria Hallelujah', cursive; /*NOTE - Exceeds Expectations Design & Layout - Additional Google Font used!*/
 }
 
 /*Header*/
@@ -85,6 +87,10 @@ li.linav {
 div.intro {
   margin-bottom: 1.8em;
   padding-bottom: 0.1em;
+  background-color: #fbffe2;
+  border-radius: 8px;
+  padding-top: 1em;
+
 }
 
 div.intro p {
@@ -105,6 +111,9 @@ div.col {
 div.portfolio {
   margin-bottom: .4em;
   padding-bottom: .1em;
+  background-color: #fbffe2; /*NOTE - Exceeds Expectations Met - Design & Layout - Backgound Color changed!*/
+  border-radius: 8px;
+  padding-top: 1em;
 }
 
 img.project {
@@ -117,7 +126,9 @@ p.project-text {
 
 div.skills {
   margin-bottom: 1.4em;
-  padding-bottom: .1em;
+  padding: .4em .1em .4em;
+  background: #b4e3f5;  /*NOTE - Exceeds Expectations met design and layout - background color change*/
+  border-radius: 8px;
 }
 
 div.skills p {
@@ -151,7 +162,7 @@ div.javascript {
 
 div.base-wrap {
   background-color: #fafafa;
-  padding: .4em .2em .3em;
+  padding: 1em .2em .3em;
   width: 100%;
 }
 
@@ -190,7 +201,7 @@ ul.footer-nav {
 }
 
 a.back-to-top {
-  color: black;
+  color: blue; /*NOTE - Exceeds Expectations Met Design & Layout - Color of at least one piece of text changed!*/
   font-weight: bold;
   float: right;
   margin: 0;
