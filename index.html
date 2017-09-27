@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Responsive Portfolio Layout</title>
     <link rel="stylesheet" href="css/styles.css">
+    <meta name="viewport" content="width=device-width">
   </head>
   <body>
 
@@ -16,10 +17,10 @@
 
       <nav class="main-navigation">
         <ul class="main-nav">
-          <a href="#home"><li class="linav">Home</li></a>
-          <a href="#portfolio"><li class="linav">Portfolio</li></a>
-          <a href="#skills"><li class="linav">Skills</li></a>
-          <a href="#contact"><li class="linav">Contact</li></a>
+          <a href="#home" class="nav"><li class="linav">Home</li></a>
+          <a href="#portfolio" class="nav"><li class="linav">Portfolio</li></a>
+          <a href="#skills" class="nav"><li class="linav">Skills</li></a>
+          <a href="#contact" class="nav"><li class="linav">Contact</li></a>
         </ul>
       </nav>
 
@@ -27,18 +28,20 @@
 
 <!-- Div - Intro ...........................................................-->
 
+<div class="container">
+
     <div class="intro">
+
+      <!-- Profile Image -->
+
+      <div class="profile-image">
+        <img src="img/responsive-layout-profile.png" alt="A picture of Me" class="profile-image">
+      </div>
 
       <!-- Intro Text -->
 
       <div class="intro-text">
         <p class="intro-text">Hi! I'm a front-end developer who loves responsive design and css. I am in the process of learning front-end web development at Treehouse and am excited to put all my skills to use! </p>
-      </div>
-
-      <!-- Profile Image -->
-
-      <div class="profile-image">
-        <img src="img/responsive-layout-profile.png" alt="A picture of Me">
       </div>
 
     </div>
@@ -115,30 +118,37 @@
 
     </main>
 
+</div>
 <!-- Div - Contact ...........................................................-->
 
-    <div class="contact" id="contact">
-      <h2 class="section-title">Contact</h2>
-      <p>If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
-      <p>Phone <span class="contact-method">07398210945</span><br>Email <span class="contact-method"><a href="mailto:contact@jaredpooley.com">contact@jaredpooley.com</a></span></p>
-    </div>
+  <div class="base-wrap">
 
-<!-- Main - Footer ...........................................................-->
+      <div class="contact" id="contact">
+        <h2 class="section-title">Contact</h2>
+        <p>If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
+        <p>Phone <span class="contact-method">07398210945</span><br><br>Email <span class="contact-method"><a href="mailto:contact@jaredpooley.com">contact@jaredpooley.com</a></span></p>
+      </div>
 
-    <footer class="main-foter">
 
-      <h2>Jared Pooley</h2>
+  <!-- Main - Footer ...........................................................-->
 
-<!-- Main - Navigation -->
+      <footer class="main-footer clearfix">
 
-        <ul class="footer-nav">
-          <a href="#home"><li class="lifooter">Home</li></a>
-          <a href="#portfolio"><li class="lifooter">Portfolio</li></a>
-          <a href="#skills"><li class="lifooter">Skills</li></a>
-          <a href="#contact"><li class="lifooter">Contact</li></a>
-        </ul>
+        <h2 class="footer-title">Jared Pooley</h2>
 
-    </footer>
+  <!-- Main - Navigation -->
+
+          <a href="#" class="back-to-top"><p class="back-to-top">Back To Top</p></a>
+
+          <ul class="footer-nav">
+            <a href="#home"><li class="lifooter">Home</li></a>
+            <a href="#portfolio"><li class="lifooter">Portfolio</li></a>
+            <a href="#skills"><li class="lifooter">Skills</li></a>
+            <a href="#contact"><li class="lifooter">Contact</li></a>
+          </ul>
+
+      </footer>
+  </div>
 
   </body>
 </html>
