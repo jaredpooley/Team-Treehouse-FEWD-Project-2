@@ -1,11 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Droid+Sans');
+@import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah');
+
 * {
   box-sizing: border-box;
 }
-
-/*Fonts*/
-
-@import url('https://fonts.googleapis.com/css?family=Droid+Sans');
-@import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah');
 
 /*Base CSS*/
 
@@ -37,10 +35,6 @@ a {
   text-decoration: none;
 }
 
-li {
-  color: #000;
-}
-
 img {
   max-width: 100%;
 }
@@ -69,17 +63,22 @@ ul.main-nav {
   margin-top: 23px;
 }
 
-a.nav {
+li.linav {
   display: block;
   margin-top: 12px;
   margin-bottom: 12px;
-}
-
-li.linav {
   background: #fff;
   padding: 15px 0;
   font-size: 1em;
   font-weight: bold;
+}
+
+a.nav {
+  color: #000;
+}
+
+a.footer-nav {
+  color: #000;
 }
 
 /*Intro*/
@@ -170,7 +169,7 @@ div.base-wrap {
 div.contact {
   margin-bottom: 1.4em;
   padding-bottom: .1em;
-  width: 100%
+  width: 100%;
   margin: auto;
 }
 
@@ -241,14 +240,11 @@ ul.footer-nav {
 
   ul.main-nav {
     display: inline-block;
-    margin-top: 0;
-  }
-
-  a.nav {
-    display: inline-block;
+    margin-top: 1em;
   }
 
   li.linav {
+    display: inline-block;
     margin: .2em .5em;
     padding: .8em 1em;
   }
